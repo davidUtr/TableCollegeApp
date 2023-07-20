@@ -1,0 +1,22 @@
+﻿<Page x:Class="TableCollege.View.TableFragment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TableCollege.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="357" d:DesignWidth="990"
+      Title="TableFragment" Foreground="{x:Null}">
+
+    <Grid Background="White" Margin="0,25,0,-25">
+        <ComboBox HorizontalAlignment="Left"   x:Name="GroupBox" SelectionChanged="GroupBox_SelectionChanged" Height="39.474" Margin="147.368,10,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Foreground="Black" Background="Black" OpacityMask="Black" IsEditable="True" FontSize="20" IsReadOnly="True" SelectedIndex="0"/>
+
+        <Label Content="Группа:" HorizontalAlignment="Left" Height="42.632" Margin="29,10,0,0" VerticalAlignment="Top" Width="106.842" FontSize="24" FontFamily="Fonts/MainFonts" Foreground="Black"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="WeekBox" SelectionChanged="GroupBox_SelectionChanged" Height="39.474" Margin="147.368,108,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Foreground="Black" Background="Black" IsEditable="True" OpacityMask="Black" FontSize="20" IsReadOnly="True" SelectedIndex="0"/>
+        <Label Content="Неделя:" HorizontalAlignment="Left" Height="42.632" Margin="29,108,0,0" VerticalAlignment="Top" Width="106.842" FontSize="24" FontFamily="Fonts/MainFonts" Foreground="Black"/>
+        <ComboBox HorizontalAlignment="Left" SelectionChanged="GroupBox_SelectionChanged" x:Name="DaysBox" Height="39.474" Margin="147.368,216,0,0" VerticalAlignment="Top" Width="200" BorderBrush="Black" Foreground="Black" Background="Black" IsEditable="True" OpacityMask="Black" FontSize="20" IsReadOnly="True" SelectedIndex="0"/>
+        <Label Content="День:" HorizontalAlignment="Left" Height="42.632" Margin="57,216,0,0" VerticalAlignment="Top" Width="78.842" FontSize="24" FontFamily="Fonts/MainFonts" Foreground="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="326" Margin="511.5,10,0,0" VerticalAlignment="Top" Width="466" Stroke="Black"/>
+        <TextBlock HorizontalAlignment="Left"  x:Name="TableBlock" Height="312" Margin="526.5,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451" Foreground="Black" FontSize="20"/>
+    </Grid>
+</Page>

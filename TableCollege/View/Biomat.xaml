@@ -1,0 +1,124 @@
+﻿<Window x:Class="TableCollege.View.Biomat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TableCollege.View"
+         xmlns:viewmodel="clr-namespace:TableCollege.ViewModel"
+        mc:Ignorable="d"
+        FontFamily="Fonts/MainFonts"
+        Title="Главное окно"  Height="600" Width="1220"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" >
+    <Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="500" Margin="102,58,0,0" Stroke="Black" VerticalAlignment="Top" Width="1000" RadiusY="12.5" RadiusX="12.5"/>
+        <Button  Content="Расписание" Click="Table_Click" x:Name="Table" HorizontalAlignment="Left" Height="46" Margin="155,496,0,0" VerticalAlignment="Top" Width="163.5" RenderTransformOrigin="0.492,0.522" Background="#FF1E6791" BorderBrush="{x:Null}" Foreground="White" FontSize="20" FontFamily="Fonts/MainFonts">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Dosis"/>
+                    <Setter Property="Background" Value="#FE6584"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FE6584"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40"
+                                        CornerRadius="12"
+                                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Преподаватели" Click="Teacher_Click" x:Name="Teacher" HorizontalAlignment="Left"  Height="46" Margin="364.5,496,0,0" VerticalAlignment="Top"  Width="193.5" RenderTransformOrigin="0.492,0.522" Background="#FF1E6791" FontSize="20" FontFamily="Fonts/MainFonts" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Dosis"/>
+                    <Setter Property="Background" Value="#FE6584"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FE6584"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40"
+                        CornerRadius="12"
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Мой профиль" Click="Profile_Click" x:Name="Profile" HorizontalAlignment="Left" Height="46" Margin="611.5,496,0,0" VerticalAlignment="Top" Width="163.5" RenderTransformOrigin="-0.382,0.5" Background="#FF1E6791" FontSize="20" FontFamily="Fonts/MainFonts" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Dosis"/>
+                    <Setter Property="Background" Value="#FE6584"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FE6584"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40"
+                        CornerRadius="12"
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="386" Margin="102,86,0,0" VerticalAlignment="Top" Width="1000">
+            <Frame   x:Name ="MainFrame" 
+            NavigationUIVisibility="Hidden" Margin="1.062,0,0,28.5"/>
+        </Grid>
+        <Button Content="Выход" Click="Exit_Click" x:Name="Exit" HorizontalAlignment="Left"  Height="46" Margin="835.5,496,0,0" VerticalAlignment="Top"  Width="193.5" RenderTransformOrigin="0.492,0.522" Background="#FF1E6791" FontSize="20" FontFamily="Fonts/MainFonts" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Dosis"/>
+                    <Setter Property="Background" Value="#FE6584"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FE6584"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40"
+                        CornerRadius="12"
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Rectangle Cursor="Hand" MouseDown="minimize_MouseDown"  Visibility="Hidden" MouseEnter="Rectangle_MouseEnter"  MouseLeave="white_MouseLeave"  x:Name="gray" Fill="#FFF3F3F3" HorizontalAlignment="Left" Height="16.75" Margin="1051.574,69.25,0,0" VerticalAlignment="Top" Width="32.863" RadiusY="4.75" RadiusX="4.75"/>
+        <Rectangle Cursor="Hand" MouseDown="minimize_MouseDown"  MouseEnter="Rectangle_MouseEnter" MouseLeave="white_MouseLeave" x:Name="white" Fill="White" HorizontalAlignment="Left" Height="16.75" Margin="1051.574,69.25,0,0" VerticalAlignment="Top" Width="32.863" RadiusY="4.75" RadiusX="4.75"/>
+        <Rectangle Fill="Black" Cursor="Hand" MouseDown="minimize_MouseDown" x:Name="minimize" HorizontalAlignment="Left" Height="3.75" Margin="1058.491,77.25,0,0" Stroke="Black" VerticalAlignment="Top" Width="18.613"/>
+
+
+    </Grid>
+</Window>

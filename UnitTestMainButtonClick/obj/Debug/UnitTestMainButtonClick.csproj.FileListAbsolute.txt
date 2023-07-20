@@ -1,0 +1,17 @@
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\UnitTestMainButtonClick.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\UnitTestMainButtonClick.pdb
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Project\TableCollege\UnitTestMainButtonClick\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Project\TableCollege\UnitTestMainButtonClick\obj\Debug\UnitTestMainButtonClick.csproj.AssemblyReference.cache
+D:\Project\TableCollege\UnitTestMainButtonClick\obj\Debug\UnitTestMainButtonClick.csproj.CoreCompileInputs.cache
+D:\Project\TableCollege\UnitTestMainButtonClick\obj\Debug\UnitTestMainButtonClick.csproj.CopyComplete
+D:\Project\TableCollege\UnitTestMainButtonClick\obj\Debug\UnitTestMainButtonClick.dll
+D:\Project\TableCollege\UnitTestMainButtonClick\obj\Debug\UnitTestMainButtonClick.pdb
